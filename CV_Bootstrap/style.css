@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*
+Define the style of a tag when it is inside another tag (regardless of depth)
+*/
+nav ul {
+    list-style: none;
+    background-color: #888888;
+    padding: 10px;
+    
+}
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+
+/* bullets */
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+
+/*
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+*/
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+
+
+/*
+In addition to the bootstrap styles, add your own CSS rules to further customize the content (at least 5 new rules).
+*/
+
+body {
+    background-image: linear-gradient(white, rgb(238, 238, 238));
+    height: 100vh;
+}
+
+/*
+Define the same style for several tags
+*/
+h1, h2 {
+    padding-top: 20px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    margin: 20px;
+    
+    font-family: Monospace, Lucida Console;
+
+    text-shadow: 2px 2px 2px rgb(165, 165, 165);
+}
+
+/*
+All elements with class
+*/
+.boldIt {
+    font-weight: bold;
+}
+
+/*
+Element with ID
+*/
+#myId {
+    text-align: justify; 
+    max-width: 50%;
+    margin: 0 auto; /* center the block */
+}
+
+img {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+
+/*
+Flexbox
+
+nowrap (default): all flex items will be on one line
+
+    justify-content: space-evenly;
+    align-content: flex-start
+    column-gap: 20px;
+*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+}
+
+/*
+Define the style of a tag when it is right inside another tag (next depth level)
+*/
+.flex-container > div {
+    background-color: white;
+    box-shadow: 8px 8px 5px rgb(165, 165, 165);
+    
+    width: 33%;
+    row-gap: 20px;
+
+    margin: 20px;
+    padding: 30px;
+
+    text-align: center;
+    font-size: large;
+}
+
+
+
+/*
+Pseudo classes
+*/
+
+/*
+mouse over link
+*/
+a:hover {
+    color: blue;
+}

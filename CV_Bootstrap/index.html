@@ -1,0 +1,57 @@
+<!-- 
+Add bootstrap (or other framework) styling to your CV website that you developed the other day. 
+Use Bootstrap’s existing components to give all the elements of your page a consistent look (e.g., the navigation bar, the form items, etc.).
+The website should be responsive and adapt the size and disposition of the items according to the device size.
+Also feel free to use a Bootstrap theme (from bootswatch.com).
+In addition to the bootstrap styles, add your own CSS rules to further customize the content (at least 5 new rules).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Main page</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="container">     
+            <h1>Matti Meikäläinen</h1>
+
+            <img src="images/guy.png" alt="Picture" width="300">
+            
+            <p><span class="boldIt">Email:</span> <a href="mailto:matti.meikalainen@example.local">matti.meikalainen@example.local</a></p>
+            <p><span class="boldIt">Socials:</span> <a href="https://linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
+            
+            <p id="myId">
+                Hello! My name is Matti, a fictional person. Welcome to my CV website!
+                I am a dedicated and enthusiastic Bachelor of Computer Science student with a foundation in software development, data structures, and algorithms.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

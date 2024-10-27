@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex">
+    
+    <title>Contact</title>
+       
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Me</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name" class="form-label mt-4">Name</label>
+                <input type="text" class="form-control" placeholder="Enter name" id="name">
+            </div>
+
+            <div class="form-group"></div>
+                <label for="age" class="form-label mt-4">Age</label>
+                <input type="number" class="form-control" placeholder="Enter age" id="age" required min="0" max="100">
+            </div>
+
+            <div>
+                <label for="email" class="form-label mt-4">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">Your email won't be shared with anyone else.</small>
+            </div>
+            
+            <div>
+                <label for="message" class="form-label mt-4">Message</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" style="height: 138px;"></textarea>
+            </div>
+
+            <div>
+                <label for="referral" class="form-label mt-4">How did you know about my page?</label>
+                <select class="form-select" id="referral">
+                    <option value="google">Google</option>
+                    <option value="friend">From a friend</option>
+                    <option value="linkedin">From Linkedin</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>        
+        </form>
+    </main>
+
+</body>
+</html>
